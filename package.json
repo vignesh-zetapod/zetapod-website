@@ -1,6 +1,6 @@
 {
-  "name": "space-portfolio",
-  "version": "1.0.1",
+  "name": "zetapod-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,7 @@
   "author": {
     "name": "Zetapod",
     "email": "connect@zetapod.in",
-    "url": "https://github.com/sanidhyy"
+    "url": "https://zetapod.in"
   },
   "description": "Welcome to Zetapod, where engineering brilliance meets creative imagination. We build innovative software solutions that redefine the future. Join us on a journey to unlock new frontiers of opportunity.",
   "keywords": [
@@ -48,19 +48,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/space-portfolioit"
+    "url": "https://github.com/Zetapod/zetapod-website"
   },
-  "homepage": "https://github.com/sanidhyy/space-portfolio#readme",
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@react-three/drei": "^9.93.0",
