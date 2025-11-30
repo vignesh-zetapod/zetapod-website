@@ -14,14 +14,19 @@ export const Contributers = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         {TEAM.map((member) => (
-          <TeamCard
+          <div 
             key={member.name}
+            className="flex justify-center w-full"
+          >
+
+          <TeamCard
             src={member.image}
             title={member.name}
             designation={member.designation}
             description={member.description}
             link={member.link}
-          />
+            />
+            </div>
         ))}
       </div>
     </section>

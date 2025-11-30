@@ -1,18 +1,18 @@
 import { Encryption } from "@/components/main/encryption";
-import { Projects } from "@/components/main/projects";
 import { Hero } from "@/components/main/hero";
 import { Team } from "@/components/main/team";
 import { Skills } from "@/components/main/skills";
+import BaseLayout from "@/components/layout/base.layout";
+import { Spacer } from "@/components/layout/helper.layout";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <div className="flex flex-col gap-20">
-        <Hero />
-        <Skills />
-        <Team />
-        <Encryption />
-      </div>
-    </main>
+    <BaseLayout>
+      <Hero />
+      <Skills />
+      <Team />
+      <Spacer height="150px" />
+      <Encryption />
+    </BaseLayout>
   );
 }

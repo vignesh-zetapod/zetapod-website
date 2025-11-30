@@ -36,11 +36,11 @@ export const VisionAndMission = () => {
           </motion.p>
         </div>
 
-        <div style={{ perspective: 1000 }}>
+        <div className="hidden lg:block" style={{ perspective: 1000 }}>
           <motion.img
             src="/vision-mission/vision.png"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="vision"
             animate={{ scale: [1, 1.08, 1] }}
             transition={{
@@ -77,11 +77,11 @@ export const VisionAndMission = () => {
           </motion.p>
         </div>
 
-        <div style={{ perspective: 1000 }}>
+      <div className="hidden lg:block" style={{ perspective: 1000 }}>
           <motion.img
             src="/vision-mission/mission.png"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             alt="mission"
             animate={{ rotate: [0, 12, 0] }}
             transition={{

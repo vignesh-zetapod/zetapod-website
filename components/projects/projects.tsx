@@ -1,4 +1,4 @@
-import { ProjectCard } from "@/components/sub/project-card";
+import { ProjectCard } from "@/components/projects/project-card";
 import { PROJECTS } from "@/constants";
 
 export const Projects = () => {
@@ -7,11 +7,13 @@ export const Projects = () => {
       id="projects"
       className="flex flex-col items-center justify-center py-20"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-        Our Cosmic Creations
-      </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        {PROJECTS.map((project) => (
+        <h2 className="w-full text-4xl font-semibold text-white text-center mb-10">
+          <i>
+            We&apos;re assembling our portfolio with great projects—stay tuned for the reveal!
+          </i>
+        </h2>
+        {/* {PROJECTS.map((project) => (
           <ProjectCard
             key={project.title}
             src={project.image}
@@ -19,7 +21,7 @@ export const Projects = () => {
             description={project.description}
             link={project.link}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );

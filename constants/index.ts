@@ -1,6 +1,5 @@
-import { FaSquareXTwitter, FaSquareGithub, FaBlog } from "react-icons/fa6";
+import { FaSquareXTwitter, FaSquareGithub, FaBlog, FaSquareInstagram, FaLinkedin, FaSquareWhatsapp } from "react-icons/fa6";
 import { MdCurrencyRupee, MdPolicy, MdEditDocument, MdFeedback } from "react-icons/md";
-import { RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 
 
 export const SKILL_DATA = [
@@ -89,7 +88,7 @@ export const GITHUB_LINK = "https://github.com/Zetapod";
 export const SOCIALS = [
       {
         name: "Instagram",
-        icon: RxInstagramLogo,
+        icon: FaSquareInstagram,
         link: "https://www.instagram.com/zetapod.in?igsh=MWE0M2hqY2N0YzAyaA==",
       },
       {
@@ -99,8 +98,13 @@ export const SOCIALS = [
       },
       {
         name: "Linkedin",
-        icon: RxLinkedinLogo,
+        icon: FaLinkedin,
         link: "https://www.linkedin.com/company/zetapod",
+      },
+      {
+        name: "WhatsApp",
+        icon: FaSquareWhatsapp,
+        link: "https://wa.me/+917010487596?text=Hi%21%20I%E2%80%99d%20like%20to%20talk%20briefly%20about%20a%20software%20project.%20Please%20contact%20me%20at%20your%20earliest.",
       },
     ] as const;
 
@@ -285,28 +289,28 @@ export const TEAM = [
     designation: 'Software Architect',
     description: 'Senior Software Engineer with 6+ years of hands-on experience in architecture and system design. Dedicated to building reliable solutions and fostering strong technical teams.',
     image: "/team/astronaut.svg",
-    link: "https://example.com",
+    link: null,
   },
   {
     name: "Harish",
     designation: 'Backend Engineer',
     description: 'Backend and Database Engineer with 4+ years of hands-on experience in system optimization and data management. Committed to delivering reliable backend solutions that power business growth.',
     image: "/team/astronaut.svg",
-    link: "https://example.com",
+    link: null,
   },
   {
     name: "Logeshwaran",
     designation: 'Frontend Engineer',
     description: 'Frontend Engineer with 5+ years of hands-on experience in modern web technologies. Dedicated to delivering high-quality, user-focused interfaces that enhance digital experiences.',
     image: "/team/astronaut.svg",
-    link: "https://example.com",
+    link: null,
   },
   {
     name: "Santhosh",
     designation: 'Full Stack Engineer',
     description: 'Full Stack Developer with 3+ years of experience combining software development and data analytics. Focused on creating intelligent, data-driven applications that deliver real business value.',
     image: "/team/astronaut.svg",
-    link: "https://example.com",
+    link: null,
   },
 ] as const;
 
@@ -367,14 +371,6 @@ export const NAV_LINKS = [
     title: "Home",
     link: "/",
   },
-  // {
-  //   title: "Skills",
-  //   link: "#skills",
-  // },
-  // {
-  //   title: "Team",
-  //   link: "#team",
-  // },
   {
     title: "About Us",
     link: "/about-us",
@@ -387,7 +383,17 @@ export const NAV_LINKS = [
     title: "Contact Us",
     link: "/contact-us",
   },
-] as const;
+  {
+    title: "References",
+    link: "/references",
+    subItems: [
+      { title: "Blogs", link: "/references/blogs" },
+      { title: "Privacy Policy", link: "/references/privacy-policy" },
+      { title: "Terms of service", link: "/references/terms-of-service" },
+      { title: "Offers", link: "/references/offers" },
+    ],
+  },
+];
 
 export const LINKS = {
   sourceCode: "https://github.com",
