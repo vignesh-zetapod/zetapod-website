@@ -1,6 +1,6 @@
 "use client";
 
-import { TeamCard } from "@/components/sub/team-card";
+import { TeamCard } from "@/components/widgets/team-card";
 import { TEAM } from "@/constants";
 
 export const Contributers = () => {
@@ -10,9 +10,10 @@ export const Contributers = () => {
       className="flex flex-col items-center justify-center"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-5">
-        Our Contributers
+        <span className="hidden lg:block">Our Contributers</span>
+        <span className="lg:hidden">Contributers</span>
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-auto">
         {TEAM.map((member) => (
           <div 
             key={member.name}

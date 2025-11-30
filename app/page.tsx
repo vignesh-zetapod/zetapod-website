@@ -1,7 +1,7 @@
-import { Encryption } from "@/components/main/encryption";
-import { Hero } from "@/components/main/hero";
-import { Team } from "@/components/main/team";
-import { Skills } from "@/components/main/skills";
+import { Encryption } from "@/components/home/encryption";
+import { Hero } from "@/components/home/hero";
+import { Team } from "@/components/home/team";
+import { Skills } from "@/components/home/skills";
 import BaseLayout from "@/components/layout/base.layout";
 import { Spacer } from "@/components/layout/helper.layout";
 

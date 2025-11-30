@@ -1,5 +1,5 @@
-import { SkillDataProvider } from "@/components/sub/skill-data-provider";
-import { SkillText } from "@/components/sub/skill-text";
+import { SkillDataProvider } from "@/components/widgets/skill-data-provider";
+import { SkillText } from "@/components/widgets/skill-text";
 
 import {
   BACKEND_SKILL,

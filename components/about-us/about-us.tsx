@@ -34,7 +34,7 @@ export const AboutUsHero = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-space-around px-20 mt-20 w-full z-[20]"
+      className="flex flex-row items-center justify-space-around px-auto mt-20 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-space-around m-auto text-start">
         <div className="md:hidden" style={{ perspective: 1000 }}>
@@ -52,7 +52,7 @@ export const AboutUsHero = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-2 text-5xl text-bold text-white max-w-[508px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-2 text-5xl text-bold text-white w-auto h-auto"
         >
           <span>
             Our story
@@ -61,13 +61,13 @@ export const AboutUsHero = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-400 my-5"
         >
           Zetapod was born from a passion for exploring the unknown — transforming complex ideas into powerful digital realities. We believe the future belongs to those who innovate fearlessly, and our work reflects that philosophy. Every experience we design is shaped by cosmic imagination, advanced technology, and a deep commitment to elevating the possibilities of the modern digital universe.
         </motion.p>
       </div>
 
-      <div className="hidden lg:block" style={{ perspective: 1000 }}>
+      <div className="hidden lg:block pl-20" style={{ perspective: 1000 }}>
         {zetapodAnimatedLogo}
       </div>
 

@@ -37,3 +37,26 @@ export const slideInFromTop = {
     },
   },
 };
+
+export const menuPanelAnimation = {
+  hidden: { x: "100%", opacity: 0 },
+  visible: {
+    x: "0%",
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 260,
+      damping: 25,
+      duration: 0.4
+    }
+  },
+  exit: {
+    x: "100%",
+    opacity: 0,
+    transition: {
+      type: "tween",
+      duration: 0.3,
+      ease: "easeInOut"
+    }
+  }
+};

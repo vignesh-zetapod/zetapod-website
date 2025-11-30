@@ -12,14 +12,14 @@ import {
   slideInFromTop,
 } from "@/lib/motion";
 
-export const HeroContent = () => {
+export const Hero = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-row items-center justify-space-around px-auto mt-20 w-full z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col gap-5 justify-space-around m-auto text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
@@ -32,7 +32,7 @@ export const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-5xl text-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl lg:text-5xl text-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Welcome to the<br />Future of{' '}
@@ -51,6 +51,7 @@ export const HeroContent = () => {
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          href="/contact-us"
         >
           Initiate Liftoff
         </motion.a>
@@ -58,13 +59,13 @@ export const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="hidden lg:block w-full h-full flex justify-center items-center"
       >
         <Image
           src="/hero-bg.svg"
           alt="work icons"
-          height={650}
-          width={650}
+          height={500}
+          width={500}
           draggable={false}
           className="select-none"
         />

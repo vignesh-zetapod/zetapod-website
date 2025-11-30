@@ -343,7 +343,7 @@ export const FOOTER_DATA = [
         link: null,
       },
       {
-        name: "Terms & conditions",
+        name: "Terms of service",
         icon: MdEditDocument,
         link: null,
       },

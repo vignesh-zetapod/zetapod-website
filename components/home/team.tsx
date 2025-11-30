@@ -1,6 +1,6 @@
 "use client";
 
-import { TeamCard } from "@/components/sub/team-card";
+import { TeamCard } from "@/components/widgets/team-card";
 import { TEAM } from "@/constants";
 
 export const Team = () => {
