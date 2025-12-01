@@ -1,5 +1,5 @@
 import { Contributers } from "@/components/about-us/contributers";
-import { AboutUsHero } from "@/components/about-us/about-us";
+import { AboutUsHero } from "@/components/about-us/hero";
 import { VisionAndMission } from "@/components/about-us/vision-mission";
 import BaseLayout from "@/components/layout/base.layout";
 import { Spacer } from "@/components/layout/helper.layout";

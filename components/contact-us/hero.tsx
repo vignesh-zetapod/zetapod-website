@@ -8,7 +8,7 @@ export const ContactUsHero = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-15 mt-20 w-full z-[20]"
+      className="flex flex-row items-center justify-center px-[5%] mt-20 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-space-around m-auto text-start">
 
@@ -29,7 +29,7 @@ export const ContactUsHero = () => {
         </motion.p>
       </div>
 
-      <div style={{ perspective: 1000 }}>
+      <div className="hidden lg:block" style={{ perspective: 1000 }}>
         <motion.img
           src="/logo.svg"
           width={500}

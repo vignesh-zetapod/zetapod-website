@@ -13,7 +13,7 @@ export const Contributers = () => {
         <span className="hidden lg:block">Our Contributers</span>
         <span className="lg:hidden">Contributers</span>
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-auto">
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-[5%]">
         {TEAM.map((member) => (
           <div 
             key={member.name}

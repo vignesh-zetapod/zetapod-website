@@ -6,7 +6,7 @@ export const SKILL_DATA = [
   {
     skill_name: "HTML",
     image: "html.png",
-    width: 80,
+    width: 60,
     height: 80,
   },
   {
@@ -83,7 +83,14 @@ export const SKILL_DATA = [
   },
 ] as const;
 
-export const GITHUB_LINK = "https://github.com/Zetapod";
+export const COMPANY = {
+  name: "Zetapod Labs",
+  displayName: "Zetapod",
+  email: "connect@zetapod.in",
+  github: "https://github.com/Zetapod",
+}
+
+export const GITHUB_LINK = COMPANY.github;
 
 export const SOCIALS = [
       {
@@ -316,8 +323,8 @@ export const TEAM = [
 
 export const FOOTER_DATA_ABOUT = {
   title: "Reach Us",
-  name: "Zetapod Labs",
-  email: "connect@zetapod.in",
+  name: COMPANY.name,
+  email: COMPANY.email,
   data: [
     ...SOCIALS,
     {
@@ -332,20 +339,20 @@ export const FOOTER_DATA = [
   {
     title: "Company",
     data: [
-      {
-        name: "Become investor",
-        icon: MdCurrencyRupee,
-        link: null,
-      },
+      // {
+      //   name: "Become investor",
+      //   icon: MdCurrencyRupee,
+      //   link: null,
+      // },
       {
         name: "Privacy policy",
         icon: MdPolicy,
-        link: null,
+        link: "/references/privacy-policy",
       },
       {
         name: "Terms of service",
         icon: MdEditDocument,
-        link: null,
+        link: "/references/terms-of-service",
       },
     ],
   },
@@ -355,12 +362,12 @@ export const FOOTER_DATA = [
       {
         name: "Blogs",
         icon: FaBlog,
-        link: null,
+        link: "/references/blogs",
       },
       {
         name: "Feedback",
         icon: MdFeedback,
-        link: null,
+        link: "/contact-us?type=feedback",
       },
     ],
   },
@@ -390,11 +397,7 @@ export const NAV_LINKS = [
       { title: "Blogs", link: "/references/blogs" },
       { title: "Privacy Policy", link: "/references/privacy-policy" },
       { title: "Terms of service", link: "/references/terms-of-service" },
-      { title: "Offers", link: "/references/offers" },
+      // { title: "Offers", link: "/references/offers" },
     ],
   },
 ];
-
-export const LINKS = {
-  sourceCode: "https://github.com",
-};

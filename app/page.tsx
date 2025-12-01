@@ -11,8 +11,10 @@ export default function Home() {
       <Hero />
       <Skills />
       <Team />
+      <div className="h-full w-full hidden lg:block">
       <Spacer height="150px" />
       <Encryption />
+      </div>
     </BaseLayout>
   );
 }

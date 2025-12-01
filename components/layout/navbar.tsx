@@ -25,9 +25,9 @@ export const Navbar = () => {
   const isDropdownActive = (parent: string) => pathname.startsWith(parent);
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-[5%]">
       {/* Navbar Container */}
-      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+      <div className="w-full h-full flex items-center justify-between m-auto px-[5%]">
         <Link
           href="/"
           className="flex items-center"
@@ -125,7 +125,7 @@ export const Navbar = () => {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center text-gray-300 md:hidden shadow-xl">
+          className="absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center text-gray-300 md:hidden shadow-xl overflow-y-auto max-h-[calc(100vh-65px)] z-40">
 
           {/* Mobile Links */}
           <div className="flex flex-col items-center gap-4 w-full">
@@ -134,7 +134,7 @@ export const Navbar = () => {
               const isParentActive = isDropdownActive(link.link);
 
               return (
-                <div key={link.title} className="w-full flex flex-col items-center">
+                <div key={link.title} className="w-full h-full flex flex-col items-center">
 
                   {/* Parent Item */}
                   {link.subItems ? (

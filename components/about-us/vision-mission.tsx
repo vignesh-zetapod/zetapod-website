@@ -15,7 +15,7 @@ export const VisionAndMission = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-space-around px-auto w-full z-[20]"
+        className="flex flex-row items-center justify-space-around px-[5%] w-full z-[20]"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-space-around m-auto text-start">
 
@@ -56,7 +56,7 @@ export const VisionAndMission = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row  w-full items-center justify-space-around px-auto mt-20 w-full z-[20]"
+        className="flex flex-row  w-full items-center justify-space-around px-[5%] mt-20 w-full z-[20]"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-space-around m-auto text-start">
 

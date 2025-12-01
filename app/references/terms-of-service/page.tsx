@@ -1,12 +1,12 @@
 "use client";
 
 import BaseLayout from "@/components/layout/base.layout";
-import PrivacyPolicy from "@/components/references/privacy-policy/content";
+import TermsOfService from "@/components/references/terms-of-service/content";
 
 export default function PrivacyPolicyPage() {
   return (
     <BaseLayout>
-        <PrivacyPolicy />
+        <TermsOfService />
     </BaseLayout>
   );
 }

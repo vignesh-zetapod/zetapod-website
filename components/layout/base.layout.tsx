@@ -21,7 +21,7 @@ export default function BaseLayout({ children }: BaseLayoutProps) {
       </video>
 
       {/* Content Wrapper */}
-      <div className="flex flex-col items-center justify-center px-20 w-full z-20">
+      <div className="flex flex-col items-center justify-center px-auto w-full z-20">
         {children}
       </div>
 

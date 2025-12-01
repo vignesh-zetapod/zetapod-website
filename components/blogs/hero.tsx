@@ -2,13 +2,11 @@
 
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "@/lib/motion";
-import { GITHUB_LINK } from "@/constants";
-import Link from "next/link";
 
-export const ProjectsHero = () => {
+export const BlogsHero = () => {
   const heroImage = <div style={{ perspective: 1000 }}>
         <motion.img
-          src="/projects/hero-image.svg"
+          src="/blogs/hero.png"
           width={500}
           height={500}
           alt="logo"
@@ -27,7 +25,7 @@ export const ProjectsHero = () => {
           className="flex flex-col gap-6 mt-6 text-4xl lg:text-5xl text-bold text-white w-auto h-auto"
         >
           <span>
-            Portfolio projects
+            Blogs
           </span>
         </motion.div>
 
@@ -39,22 +37,8 @@ export const ProjectsHero = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[628px]"
         >
-          Explore a showcase of our most impactful software projects — crafted with precision, innovation, and a commitment to delivering outstanding user experiences. Each build reflects our passion for solving real-world problems through modern technology.
+          Discover the ideas, research, and stories that inspire the work we do at ZetaPod. Our blog shares insights from software development, AI, and emerging technologies, offering thoughtful perspectives and practical lessons that shape our vision for tomorrow and guide the innovative solutions we build.
         </motion.p>
-
-        <Link
-          href={GITHUB_LINK}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="flex flex-row items-center my-[10px]"
-        >
-          <motion.span
-          variants={slideInFromLeft(1)}
-          className="py-2 px-5 button-primary text-center text-white cursor-pointer rounded-lg min-w-[150px] max-w-[200px]"
-        >
-          Check our github
-        </motion.span>
-        </Link>
         
       </div>
 

@@ -7,7 +7,7 @@ export const Projects = () => {
       id="projects"
       className="flex flex-col items-center justify-center py-20"
     >
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-[5%]">
         <h2 className="w-full text-4xl font-semibold text-white text-center mb-10">
           <i>
             We&apos;re assembling our portfolio with great projects—stay tuned for the reveal!

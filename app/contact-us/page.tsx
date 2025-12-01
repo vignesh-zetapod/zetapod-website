@@ -10,7 +10,9 @@ export default function ContactUs() {
     <BaseLayout>
       <ContactUsHero />
       <Spacer height="60px" />
-      <ContactUsForm />
+      <div className="px-[5%]">
+        <ContactUsForm />
+      </div>
     </BaseLayout>
   );
 }

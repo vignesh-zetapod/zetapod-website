@@ -1,15 +1,16 @@
 import React from "react";
-import './styles.css';
+import { COMPANY } from "@/constants";
+import '../styles/text-content.style.css';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="prose px-15 mt-20 py-10 privacy-policy-container">
-      <h1><strong>Privacy Policy for ZETAPOD Labs</strong></h1>
+    <div className="prose mt-20 py-10 px-[5%] content-container">
+      <h1><strong>Privacy Policy</strong></h1>
 
       <p><strong>Last Updated: 01-December-2025</strong></p>
 
       <p>
-        ZETAPOD Labs (“we”, “us”, or “our”) is committed to protecting your
+        ZETAPOD Labs (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) is committed to protecting your
         privacy. This Privacy Policy explains how we collect, use, disclose, and
         safeguard your information when you visit our website, use our services,
         or communicate with us. It also outlines your rights under applicable
@@ -88,10 +89,10 @@ export default function PrivacyPolicy() {
       {/* SECTION 3 */}
       <h2><strong>3. Legal Basis for Processing (GDPR)</strong></h2>
       <ul>
-        <li><strong>Consent</strong> – When you voluntarily provide information or accept cookies.</li>
-        <li><strong>Contractual Necessity</strong> – To deliver services you requested.</li>
-        <li><strong>Legitimate Interests</strong> – To improve our services, prevent fraud, and secure our platform.</li>
-        <li><strong>Legal Obligation</strong> – To comply with applicable laws and regulatory requirements.</li>
+        <li><strong>Consent</strong> - When you voluntarily provide information or accept cookies.</li>
+        <li><strong>Contractual Necessity</strong> - To deliver services you requested.</li>
+        <li><strong>Legitimate Interests</strong> - To improve our services, prevent fraud, and secure our platform.</li>
+        <li><strong>Legal Obligation</strong> - To comply with applicable laws and regulatory requirements.</li>
       </ul>
 
       <hr />
@@ -184,7 +185,7 @@ export default function PrivacyPolicy() {
       <hr />
 
       {/* SECTION 11 */}
-      <h2><strong>11. Children’s Privacy</strong></h2>
+      <h2><strong>11. Children&apos;s Privacy</strong></h2>
       <p>
         Our services are not intended for children under 13 (or 16 in the EU). We do
         not knowingly collect data from minors.
@@ -195,7 +196,7 @@ export default function PrivacyPolicy() {
       {/* SECTION 12 */}
       <h2><strong>12. Changes to This Privacy Policy</strong></h2>
       <p>
-        We may update this Privacy Policy periodically. The “Last Updated” date
+        We may update this Privacy Policy periodically. The &quot;Last Updated&quot; date
         will reflect the most recent changes.
       </p>
 
@@ -203,8 +204,15 @@ export default function PrivacyPolicy() {
 
       {/* SECTION 13 */}
       <h2><strong>13. Contact Us</strong></h2>
-      <p><strong>ZETAPOD Labs</strong></p>
-      <p>Email: <strong>connect@zetapod.in</strong></p>
+            <p>
+              If you have questions about these Terms, please contact us:
+            </p>
+            <ul>
+              <li>
+                <strong>{COMPANY.name}</strong>
+              </li>
+              <li>Email: {COMPANY.email}</li>
+            </ul>
 
     </div>
   );
